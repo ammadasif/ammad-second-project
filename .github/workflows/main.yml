@@ -34,8 +34,9 @@ jobs:
             # Yarn command
             cmd: install
             
-      - name : Creting Readt App
+      - name : Creting React App
         run: yarn build
+        
       - name : installing surge
         run: npm install -g surge
         
