@@ -34,12 +34,12 @@ jobs:
             # Yarn command
             cmd: install
             
-      - name : Creting React App
+      - name : Creating React App
         run: sudo yarn build
         
-      - name : installing surge
+      - name : Installing surge
         run: npm install -g surge
         
-      - name: deploying on surge
+      - name: Deploying on surge
         run: surge ./build http://ammad-second-project.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
           
